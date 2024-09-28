@@ -5,11 +5,11 @@
 # Set COMPRESSED to "YES" to create a compressed program
 # ----------------------------
 
-NAME        ?= DOOM
-COMPRESSED  ?= NO
-ICON        ?= iconc.png
-DESCRIPTION ?= "DOOM for the TI 84 CE"
+NAME        = DOOM
+COMPRESSED  = NO
+ICON        = iconc.png
+DESCRIPTION = "DOOM for the TI 84 CE"
 
 # ----------------------------
 
-include $(CEDEV)/include/.makefile
+include $(shell cedev-config --makefile) 
